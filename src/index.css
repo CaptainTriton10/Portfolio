@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import 'tailwindcss';
 
 @theme {
@@ -6,4 +8,11 @@
   --color-primary: #ee3102;
   --color-secondary: #4a22ea;
   --color-accent: #c4c117;
+  --font-bartle: "BBH Bartle";
+  --font-inter: "Inter"
+}
+
+p {
+  font-family: "Inter";
+  color: var(--color-text);
 }
