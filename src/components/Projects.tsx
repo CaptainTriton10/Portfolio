@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router';
+
 type ProjectTileProps = {
   title: string;
   clickCallback?: () => void;
@@ -20,9 +22,16 @@ function ProjectTile(props: ProjectTileProps) {
 }
 
 function Projects() {
+  let navigate = useNavigate();
+
   return (
     <div className="mt-32">
-      <ProjectTile title="Project 1" />
+      <ProjectTile
+        title="Project 1"
+        clickCallback={() => {
+          navigate('/projects/transign');
+        }}
+      />
       <ProjectTile title="Project 2" />
       <ProjectTile title="Project 3" />
     </div>

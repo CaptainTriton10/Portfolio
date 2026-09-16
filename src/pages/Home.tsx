@@ -1,8 +1,8 @@
-import AboutMe from './components/AboutMe';
-import Landing from './components/Landing';
-import Projects from './components/Projects';
+import AboutMe from '../components/AboutMe';
+import Landing from '../components/Landing';
+import Projects from '../components/Projects';
 
-function App() {
+function Home() {
   return (
     <div className="p-16 bg-background">
       <Landing />
@@ -14,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
