@@ -18,7 +18,7 @@ function AboutMe() {
           quod cumque qui aliquip est deserunt. Nulla laboris sunt eu distinctio deserunt similique
           est.
         </p>
-        <div className="bg-accent h-xl w-4 mx-8" />
+        <div className="bg-accent h-xl w-2.5 mx-8" />
         <p className="text-2xl w-400">Not sure what to put here</p>
       </div>
     </div>
