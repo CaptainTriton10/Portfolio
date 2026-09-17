@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router';
+import LinkButton from './LinkButton';
 
 type ProjectTileProps = {
   title: string;
@@ -7,16 +8,9 @@ type ProjectTileProps = {
 
 function ProjectTile(props: ProjectTileProps) {
   return (
-    <div className="w-full h-80">
-      <h3 className="font-bartle text-6xl text-primary">{props.title}</h3>
-      <p className="mt-8 text-4xl">A short description</p>
-      <div
-        className="w-full h-15 mt-8 bg-accent"
-        onClick={() => {
-          if (props.clickCallback) props.clickCallback();
-        }}
-      ></div>
-      <div className="w-full h-0.5 mt-8 bg-accent"></div>
+    <div className="w-full mb-16">
+      {/* <h3 className="font-bartle text-6xl text-primary">{props.title}</h3> */}
+      <LinkButton clickCallback={props.clickCallback} text={props.title} />
     </div>
   );
 }
@@ -26,13 +20,14 @@ function Projects() {
 
   return (
     <div className="mt-32">
+      <h2 className="mb-32 text-6xl font-bartle text-primary">Projects</h2>
       <ProjectTile
-        title="Project 1"
+        title="Transign"
         clickCallback={() => {
           navigate('/projects/transign');
         }}
       />
-      <ProjectTile title="Project 2" />
+      <ProjectTile title="Photography" />
       <ProjectTile title="Project 3" />
     </div>
   );
