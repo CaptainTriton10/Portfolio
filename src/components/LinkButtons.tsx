@@ -8,7 +8,7 @@ type LinkButtonProps = {
 };
 
 function BackButton() {
-  const [mouseOver, setMouseOver] = useState(false);
+  const [_mouseOver, setMouseOver] = useState(false);
   const navigate = useNavigate();
 
   return (
@@ -19,11 +19,7 @@ function BackButton() {
       onClick={() => {
         () => navigate(-1);
       }}
-    >
-      <svg height="200" width="300" xmlns="http://www.w3.org/2000/svg">
-        <line x1="0" y1="0" x2="300" y2="200" />
-      </svg>
-    </div>
+    ></div>
   );
 }
 

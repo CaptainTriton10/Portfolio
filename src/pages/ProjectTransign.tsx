@@ -1,9 +1,6 @@
-import { useNavigate } from 'react-router';
 import { BackButton } from '../components/LinkButtons';
 
 function ProjectTransign() {
-  let navigate = useNavigate();
-
   return (
     <div className="p-16 h-full bg-background">
       <BackButton />
