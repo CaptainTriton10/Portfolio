@@ -1,11 +1,12 @@
 import { useNavigate } from 'react-router';
+import { BackButton } from '../components/LinkButtons';
 
 function ProjectTransign() {
   let navigate = useNavigate();
 
   return (
     <div className="p-16 h-full bg-background">
-      <div className="w-full h-15 bg-accent" onClick={() => navigate(-1)}></div>
+      <BackButton />
       <div className="flex flex-col mt-16 h-120 gap-8">
         <h1 className="text-primary text-6xl font-bartle">Transign</h1>
         <p className="text-2xl w-[60%]">

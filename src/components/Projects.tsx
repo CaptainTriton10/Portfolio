@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router';
-import LinkButton from './LinkButton';
+import LinkButton from './LinkButtons';
 
 type ProjectTileProps = {
   title: string;
